@@ -1,0 +1,100 @@
+
+body {
+    background: black;
+    font-family: sans-serif;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+div#page-container {
+    align-items: center;
+    background-image: url("../images/tumblr_squareFlower.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: scroll;
+}
+
+div.panel {
+    background: rgba(0,0,0,0.8);
+    border: 5px solid white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 5vw;
+    padding: 10px;
+    width: 90%;
+}
+
+div.panel:not(#panel1) {
+    // display: none;
+}
+
+div#panel1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    text-align: center; 
+
+    animation-name: toCenter;
+    animation-duration: 2s
+}
+
+img {
+    width: 100%;
+}
+
+#panel1 {
+    color: white;
+
+    h1, h2, h3 {
+        margin: 0;
+        padding-bottom: 1em;
+    }
+    
+    h1 {
+        font-family: Prompt;
+        text-shadow: 2px 2px blue;
+    }
+
+    h2 {
+        font-family: Capriola;
+    }
+
+    h3 {
+        font-family: Megrim;
+        font-weight: bold
+    }
+}
+
+
+// Current panel should glow
+
+// TODO: Animations
+// to top, to center, to bottom
+// Use JS to assign class and then let CSS handle transforms
+
+// @keyframes toCenter {
+//     from { 
+//         position: absolute;
+//         top:0;
+//         left: 50%;
+//     }
+
+//     to {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//     }
+// }
+
+
+
+// Media Queries
