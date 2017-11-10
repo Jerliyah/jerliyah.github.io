@@ -19,11 +19,33 @@ div#page-container {
   position: absolute;
   width: 100%; }
 
+div#social-media-container img {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 15px;
+  box-sizing: border-box; }
+div#social-media-container a {
+  box-sizing: border-box;
+  border: 3px solid transparent; }
+div#social-media-container a:hover {
+  border-radius: 100%;
+  border: 3px solid white; }
+
 div#project-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%; }
+  div#project-container a {
+    text-decoration: none;
+    color: inherit; }
+  div#project-container p {
+    font-family: Comfortaa; }
+  div#project-container span {
+    font-weight: bold;
+    font-family: Capriola; }
+  div#project-container img {
+    width: 100%; }
 
 img.arrow {
   height: 144px;
@@ -51,20 +73,6 @@ div#panel1 {
   text-align: center;
   animation-name: toCenter;
   animation-duration: 2s; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-p {
-  font-family: Comfortaa; }
-
-span {
-  font-weight: bold;
-  font-family: Capriola; }
-
-img {
-  width: 100%; }
 
 #panel1 {
   color: white; }
