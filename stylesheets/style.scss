@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    color: white;
 }
 
 div#page-container {
@@ -21,9 +22,23 @@ div#page-container {
     overflow: scroll;
 }
 
+img.arrow {
+    height: 144px;
+    width: 144px;
+
+    &:first-child {
+        margin-top: 5vw;
+    }
+
+    &:last-child {
+        margin-bottom: 5vw;
+    }
+}
+
 div.panel {
     background: rgba(0,0,0,0.8);
-    border: 5px solid white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     border-radius: 15px;
     box-sizing: border-box;
     margin: 5vw;
@@ -40,11 +55,20 @@ div#panel1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20vh;
+    // margin-top: 20vh;
     text-align: center; 
 
     animation-name: toCenter;
     animation-duration: 2s
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    font-weight: bold;
 }
 
 img {
