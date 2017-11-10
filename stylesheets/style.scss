@@ -74,9 +74,15 @@ a {
     color: inherit;
 }
 
+p {
+    font-family: Comfortaa;
+}
+
 span {
     font-weight: bold;
+    font-family: Capriola;
 }
+
 
 img {
     width: 100%;
@@ -91,12 +97,12 @@ img {
     }
     
     h1 {
-        font-family: Prompt;
+        font-family: Capriola;
         text-shadow: 2px 2px blue;
     }
 
     h2 {
-        font-family: Capriola;
+        font-family: Comfortaa;
     }
 
     h3 {

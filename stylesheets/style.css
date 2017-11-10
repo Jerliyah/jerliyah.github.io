@@ -56,8 +56,12 @@ a {
   text-decoration: none;
   color: inherit; }
 
+p {
+  font-family: Comfortaa; }
+
 span {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: Capriola; }
 
 img {
   width: 100%; }
@@ -68,10 +72,10 @@ img {
     margin: 0;
     padding-bottom: 1em; }
   #panel1 h1 {
-    font-family: Prompt;
+    font-family: Capriola;
     text-shadow: 2px 2px blue; }
   #panel1 h2 {
-    font-family: Capriola; }
+    font-family: Comfortaa; }
   #panel1 h3 {
     font-family: Megrim;
     font-weight: bold; }
