@@ -15,9 +15,15 @@ div#page-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: scroll;
   position: absolute;
-  width: 100%;
-  overflow: scroll; }
+  width: 100%; }
+
+div#project-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 img.arrow {
   height: 144px;
@@ -69,5 +75,14 @@ img {
   #panel1 h3 {
     font-family: Megrim;
     font-weight: bold; }
+
+@media screen and (min-width: 850px) {
+  div#project-container {
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  div.panel {
+    width: 30%;
+    margin: 15px 1.5%; } }
 
 /*# sourceMappingURL=style.css.map */
