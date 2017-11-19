@@ -23,6 +23,8 @@ div#page-container {
 }
 
 div#social-media-container {
+    width: 100%;
+    
     img {
         width: 10vw;
         height: 10vw;
@@ -102,9 +104,9 @@ div#panel1 {
     justify-content: center;
     // margin-top: 20vh;
     text-align: center; 
-
-    animation-name: toCenter;
-    animation-duration: 2s
+    min-height: 20em;
+    // animation-name: toCenter;
+    // animation-duration: 2s
 }
 
 
