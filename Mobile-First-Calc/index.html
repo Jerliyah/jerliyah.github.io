@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title> Calculator </title>
+
+    </head>
+
+
+    <body>
+
+        <div id="calc-body" class="column">
+            <h1> Calculator </h1>
+
+            <!-- Characters will be added to 'screen' with JS -->
+            <div id="screen">
+
+            </div>
+
+            <!-- Interactive buttons container -->
+            <div id="btn-ctn">
+
+                <!-- Container for numbers -->
+                <div id="num-ctn" class="column">
+
+                     <!-- 1st row of numbers -->
+                     <div class="row">
+                         <div class="btn num" id="one">
+                             <h2> 1 </h2>
+                         </div>
+                         <div class="btn num" id="two">
+                             <h2> 2 </h2>
+                         </div>
+                         <div class="btn num" id="three">
+                             <h2> 3 </h2>
+                         </div>
+                     </div><!-- End of row -->
+
+                     <!-- 2nd row of buttons -->
+                     <div class="row">
+                         <div class="btn num" id="four">
+                             <h2> 4 </h2>
+                         </div>
+                         <div class="btn num" id="five">
+                             <h2> 5 </h2>
+                         </div>
+                         <div class="btn num" id="six">
+                             <h2> 6 </h2>
+                         </div>
+                     </div><!-- End of row -->
+
+                     <!-- 3rd row of buttons -->
+                     <div class="row">
+                         <div class="btn num" id="seven">
+                             <h2> 7 </h2>
+                         </div>
+                         <div class="btn num" id="eight">
+                             <h2> 8 </h2>
+                         </div>
+                         <div class="btn num" id="nine">
+                             <h2> 9 </h2>
+                         </div>
+                     </div><!-- End of row -->
+
+                     <!-- 4th row of buttons -->
+                     <div class="row">
+                         <div class="btn num" id="zero">
+                             <h2> 0 </h2>
+                         </div>
+
+                         <div class="btn num" id="point">
+                             <h2> . </h2>
+                         </div>
+                     </div>
+
+                     <!-- 5th row of buttons -->
+                     <div class="row">
+                         <div id="clear-history" class="clear">
+                             <p> C History</p>
+                         </div>
+
+                         <div id="clear-screen" class="clear">
+                             <p> C Screen </p>
+                         </div>
+                     </div>
+
+                </div><!-- End of numbers container -->
+
+
+                <!-- Container for Operations -->
+                <div id="opr-ctn" class="column">
+
+                    <div id="plus" class="btn opr">
+                        <h2> + </h2>
+                    </div>
+                    <div id="minus" class="btn opr">
+                        <h2> - </h2>
+                    </div>
+                    <div id="times" class="btn opr">
+                        <h2> * </h2>
+                    </div>
+                    <div id="divided" class="btn opr">
+                        <h2> / </h2>
+                    </div>
+
+                    <div id="equals" class="btn opr">
+                        <h2> = </h2>
+                    </div>
+
+                </div><!-- End of operations container -->
+
+            </div><!-- End of interactive buttons container -->
+
+        </div><!-- End of calculator container -->
+
+    </body>
+
+    <script src="js/action.js"></script>
+</html>

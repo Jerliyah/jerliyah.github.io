@@ -1,0 +1,123 @@
+
+/*==============
+    Variables
+===============*/
+$color1: #6666ff;
+$roundBorder: 10px;
+
+
+/* Backgrounds
+1) asanoha
+2) dimension (@2X)
+*/
+
+/*==============
+    Styling
+===============*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    background: url("../images/asanoha.png");
+
+    & > div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba($color1, 0.5);
+    }
+}
+
+
+
+
+section {
+    background: white;
+    border-radius: $roundBorder;
+    padding: 3rem 5rem;
+    width: 50%;
+}
+
+
+main {
+    text-align: center;
+}
+
+main > i {
+    color: $color1;
+}
+
+h1 {
+    i {
+        color: $color1 !important;
+        font-size: 2rem;
+    }
+
+    &::first-letter {
+        font-size: 2em;
+        color: $color1;
+    }
+
+    &::after {
+        font-family: FontAwesome;
+        content: "\f10e";
+        display: inline-block;
+        line-height: 50% !important;
+        transform: translateY(70%);
+        color: $color1 !important;
+        font-size: 2em;
+    }
+}
+
+h4 {
+    text-align: right;
+    color: $color1;
+}
+
+
+
+aside {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    & > i {
+        color: black;
+    }
+
+    & > i:hover {
+        color: $color1;
+    }
+
+    & > i:active {
+        text-shadow: -1px -1px black;
+    }
+}
+
+button {
+    background: $color1;
+    border-width: 0;
+    font-weight: bold;
+    padding: 1rem 2rem;
+
+    &:hover {
+        background: black;
+        color: white;
+    }
+
+    &:active {
+        color: $color1;
+    }
+}
+
+
+
+h6 {
+    background: white;
+    border-radius: $roundBorder;
+    padding: 5px 10px;
+}

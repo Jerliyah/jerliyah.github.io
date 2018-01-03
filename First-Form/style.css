@@ -1,0 +1,90 @@
+/* 
+darkPurple: #292942;
+lightPurple: #303048;
+offwhite: #5F5F71;
+
+brightPink: #E986C0;
+dullPink: #8C6BB8;
+*/
+
+body {
+    padding: 0;
+    margin:10vh auto;
+    color: #5F5F71;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #E986C0 , #8C6BB8);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+button {
+    background: white;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    padding: 15px 50px;
+    margin: 40px auto 0 auto;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #792955;
+}
+button:hover {
+    box-shadow: 0 0 5px white;
+}
+button:active {
+    background: #5F5F71;
+}
+
+
+div.options-ctn {
+    background: #303048;
+    padding: 5px;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+div#outer-form {
+    background: #292942;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    box-shadow: 0 0 50px magenta;
+}
+
+
+ol {
+    margin: 0;
+}
+
+
+p {
+    display: inline-block;
+    color: white;
+    font-size: 0.75em;
+    border: 3px solid #5F5F71;
+    border-radius: 100%;
+    padding: 0.5em 0.75em;
+    margin: 10px 5%;
+}
+p:active {
+    border-color: black;
+}
+p:hover {
+    border-color: white;
+}
+p.selected {
+    background: #292942;
+    border: 3px solid #792955;
+}
+
+
+
+
+

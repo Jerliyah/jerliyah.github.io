@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Twitch TV</title>
+        <link rel="stylesheet" href="styling/style.css" />
+    </head>
+
+
+    <body>
+
+        <div id="ctn">
+
+            <header>
+                <img id="twitch-logo" src="images/logo1.png" />
+                <h1>Twitch Streamers</h1>
+            </header>
+
+            <ul>
+                <li class='blue active' value="all">
+                    <div></div>
+                    <h2>All</h2>
+                </li>
+                <li class='green' value="online">
+                    <div></div>
+                    <h2>Online</h2>
+                </li>
+                <li class='yellow' value="offline">
+                    <div></div>
+                    <h2>Offline</h2>
+                </li>
+            </ul>
+
+            <main>
+
+                <!--
+                == Example ==
+                <div class="profiles">
+                    <img class="profile-images" src="" />
+                    <h2 class="profile-names"></h2>
+                </div> -->
+            </main>
+
+        </div>
+
+    </body>
+
+    <!-- JQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+    <!-- API Sample -->
+    <script src="scripts/TwitchSample.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/action.js"></script>
+</html>

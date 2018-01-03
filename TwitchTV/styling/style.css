@@ -1,0 +1,144 @@
+body {
+  background: url("../images/background1.jpg");
+  background-size: 100% 100%;
+  color: #4B367C;
+  font-family: sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+#ctn {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  margin: auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 30px 0; }
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase; }
+
+#twitch-logo {
+  height: 100%; }
+
+ul {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+
+li {
+  align-items: center;
+  /*For older browsers*/
+  background: #666699;
+  /*For browsers that support gradients*/
+  background: linear-gradient(to top, #666699, #efeff5);
+  display: flex;
+  padding: 0.5em 1em; }
+  li div {
+    border: 2px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    height: 15px;
+    margin-right: 10px;
+    width: 15px; }
+  li h2 {
+    font-size: 15px;
+    margin: 0; }
+
+.blue {
+  border: 3px solid #1ad1ff; }
+  .blue > div {
+    background: #1ad1ff; }
+  .blue:hover h2 {
+    color: white; }
+  .blue.active {
+    box-shadow: 0 0 20px #1ad1ff; }
+
+.green {
+  border: 3px solid #00ff00; }
+  .green > div {
+    background: #00ff00; }
+  .green:hover h2 {
+    color: white; }
+  .green.active {
+    box-shadow: 0 0 20px #00ff00; }
+
+.yellow {
+  border: 3px solid #ffff00; }
+  .yellow > div {
+    background: #ffff00; }
+  .yellow:hover h2 {
+    color: white; }
+  .yellow.active {
+    box-shadow: 0 0 20px #ffff00; }
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 2rem; }
+
+.profiles {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
+  position: relative; }
+  .profiles:hover img {
+    box-shadow: 0 0 30px white; }
+  .profiles:hover h2 {
+    text-shadow: 0 0 5px white; }
+
+.profile-images {
+  height: 90%;
+  width: 90%;
+  border-radius: 100%;
+  box-sizing: border-box; }
+
+.profile-names {
+  position: absolute !important;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 20px; }
+
+.profile-statuses {
+  margin-top: -2em; }
+
+.online {
+  border: 2em solid #00ff00; }
+
+.offline {
+  border: 2em solid #ffff00; }
+
+.info-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px; }
+  .info-overlay p {
+    margin: 0;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

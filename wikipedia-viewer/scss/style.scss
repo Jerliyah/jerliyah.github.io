@@ -1,0 +1,99 @@
+/*================
+    Variables
+=================*/
+
+// Theme
+$dBlue: #092B40;
+$mBlue: #6699ff;
+$lBlue: #e6f2ff;
+
+@mixin round {
+    border-radius: 2rem;
+}
+
+
+
+/*==============
+    Styling
+===============*/
+
+body {
+    height: 100vh;
+    background: $dBlue;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    h1 {
+        color: white;
+    }
+}
+
+input {
+    text-align: center;
+    margin: 1rem;
+    border: 3px solid $mBlue;
+    @include round;
+    font-size: 1.5em;
+}
+
+button {
+    background: $mBlue;
+    @include round;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+
+    &:focus {
+        background: darken($mBlue, 10%)
+    }
+
+    &:hover {
+        background: darken($mBlue, 15%);
+    }
+
+    &:active {
+        background: $lBlue;
+        color: black;
+    }
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+div {
+    background: $lBlue;
+    padding: 1rem 3rem;
+    color: black;
+    width: 80%;
+    margin: 1rem auto;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:hover{
+        border-left: 1rem solid $mBlue;
+        padding-left: 2rem;
+    }
+}

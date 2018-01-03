@@ -1,0 +1,71 @@
+/*================
+    Variables
+=================*/
+@font-face {
+  font-family: 'DigitalDream-Reg';
+  src: url("../font/DIGITALDREAM.ttf"); }
+/*==============
+    Styling
+===============*/
+body {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+  background: url("../img/wood2.jpg");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  padding: 0 2rem 2rem 2rem; }
+
+h1 {
+  margin: 0;
+  padding: 0.5rem;
+  color: #CE1515;
+  text-shadow: 1px 1px white;
+  font-family: 'Kaushan Script';
+  font-size: 3.5em; }
+
+p {
+  color: white; }
+  p b {
+    color: #CE1515; }
+
+#clock-window {
+  border-radius: 40px;
+  border: 20px solid #CE1515;
+  display: inline-block; }
+  #clock-window h2 {
+    font-size: 3em;
+    font-family: 'Stint Ultra Expanded', 'DigitalDream-Reg';
+    margin: 2rem;
+    color: white; }
+
+button {
+  background: white;
+  color: #CE1515;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px 30px 10px 20px;
+  border: none;
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: 'Kaushan Script';
+  border-radius: 20px;
+  margin: 2rem; }
+  button:hover {
+    background: #CE1515;
+    color: white; }
+  button:active {
+    background: #ec4444; }
+
+/*-------------------
+    Media Queries
+--------------------*/
+@media screen and (min-width: 550px) {
+  #clock-window h2 {
+    font-size: 6em; } }
+
+/*# sourceMappingURL=style.css.map */
