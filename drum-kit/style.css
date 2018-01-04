@@ -19,6 +19,16 @@ div#strip {
     font-family: sans-serif;
 }
 
+div.key-ctn {
+    padding: 0.5em;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+div.playing {
+    border-color: white;
+}
+
 h1, h2 {
     margin: 0;
 }
