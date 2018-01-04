@@ -35,9 +35,13 @@ window.addEventListener( 'keypress', (event) => {
 
     if( keys.hasOwnProperty(pressed_key) ) {
         document.querySelector(`div.${pressed_key}-ctn`).classList.add('playing');
-        document.querySelector(`audio#${pressed_key}`).play();
+        let audio = document.querySelector(`audio#${pressed_key}`)
+
+        audio.currentTime = 0;
+        audio.play();
     }   
 });
+
 
 window.addEventListener( 'keyup', (event) => {
     let currently_playing = document.querySelector('div.playing');
