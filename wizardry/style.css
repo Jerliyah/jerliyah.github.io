@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: 'harry_potter';
+    src:  url('./harry_potter.TTF')
+}
+
+
+
+
+body {
+    font-family: "harry_potter";
+    color: white;
+    background: url('bg.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.column {
+    text-align: center;
+    position: relative;
+}
+
+.column > div:first-child{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ball {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    bottom: 10vh;
+    left: 35%;
+}
+
+
+html {
+    --color: white;
+    --roundness: 0;
+    --fromBottom: 10vh;
+}
+
+
+#color-ctn {
+    grid-column: 1;
+}
+#color-ctn p {
+    color: var(--color);
+}
+#color-ctn .ball {
+    background: var(--color);
+}
+
+
+#shapeshift-ctn {
+    grid-column: 2;
+}
+
+#shapeshift-ctn .ball {
+    border-radius: var(--roundness);
+}
+
+
+#levitate-ctn {
+    grid-column: 3;
+}
+
+#levitate-ctn .ball {
+    bottom: var(--fromBottom);
+}
+
+
