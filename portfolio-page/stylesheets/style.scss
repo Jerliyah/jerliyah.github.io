@@ -65,7 +65,10 @@ div#project-container {
     
     
     img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 50vh;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -131,6 +134,19 @@ div#panel1 {
     h3 {
         font-family: Megrim;
         font-weight: bold
+    }
+}
+
+.full-width {
+    width: 100vw;
+    text-align: center;
+}
+
+.bold_link {
+    font-weight: bold;
+
+    &:hover {
+        text-shadow: 0 0 5px white;
     }
 }
 
