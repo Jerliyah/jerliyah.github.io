@@ -1,0 +1,43 @@
+body {
+    align-items: center;
+    background: url('hypnotize.png');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: 3px solid #00E8ED;
+    border-radius: 1em 1em 0 0;
+    padding: 0.5em 1em;
+    margin-top: 5vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li > * {
+    padding: 0 20px;
+}
+
+li > *:last-child {
+    font-size: 10px;
+}
+
+.hl {
+    background: yellow;
+}
+
