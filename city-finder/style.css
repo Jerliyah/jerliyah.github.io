@@ -1,3 +1,7 @@
+html {
+    --color: #00E8ED
+}
+
 body {
     align-items: center;
     background: url('hypnotize.png');
@@ -11,22 +15,42 @@ body {
 }
 
 input {
-    border: 3px solid #00E8ED;
+    border: 3px solid var(--color);
     border-radius: 1em 1em 0 0;
     padding: 0.5em 1em;
     margin-top: 5vh;
+    box-sizing: border-box;
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    border-radius: 0 0 1em 1em;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    animation: glow-up 0.8s infinite alternate;
 }
+
+@keyframes glow-up {
+    from {
+      border-color: transparent;
+    }
+  
+    to {
+      border-color:var(--color);
+    }
+  }
 
 li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+li:hover {
+    background: rgba(0,0,0,0.1);
 }
 
 li > * {
