@@ -65,3 +65,8 @@ li > *:last-child {
     background: yellow;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

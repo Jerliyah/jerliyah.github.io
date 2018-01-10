@@ -51,15 +51,18 @@ function display_matches() {
                             `<span class="hl">${state_hl}</span>`);
 
 
-        return `<li class="panel">
-                    <p> ${city_name_hl}, ${state_name_hl} </p>
-                    <p>${city.population}</p>
-                </li>`
+        let url = `http://www.city-data.com/city/${city.city.replace(/\s/g,'-')}-${city.state.replace(/\s/g,'-')}.html`
+        return `<a href=${url}>
+                    <li class="panel">
+                        <p> ${city_name_hl}, ${state_name_hl} </p>
+                        <p>${city.population}</p>
+                    </li>
+                </a>`
     }).join('')
         
 
     panel_ctn.innerHTML = panels;
-    fancy_style()
+    fancy_style();
 }
 
 search_box.addEventListener('keyup', display_matches)
@@ -78,12 +81,13 @@ function random_color() {
 
 
 function fancy_style() {
-    search_box.style.width = panel_ctn.offsetWidth + "px";
+    if( panel_ctn.offsetWidth > 260) {
+        search_box.style.width = panel_ctn.offsetWidth + "px";
+    }
     html.style.setProperty('--color', random_color());
 }
 
 
 // --------------- Redirection -----------------
-
 // TODO: when clicking on a city, go to informational page
 
