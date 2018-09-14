@@ -43,7 +43,8 @@ div#social-media-container {
     }
 }
 
-div#project-container {
+div#webpage-project-container,
+div#threeD-project-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -175,7 +176,8 @@ div#panel1 {
 
 // Media Queries
 @media screen and (min-width: 850px) {
-    div#project-container {
+    div#webpage-project-container,
+    div#threeD-project-container {
         flex-direction: row;
         flex-wrap: wrap;
     }

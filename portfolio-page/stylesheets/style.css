@@ -33,20 +33,25 @@ div#social-media-container {
     border-radius: 100%;
     border: 3px solid white; }
 
-div#project-container {
+div#webpage-project-container,
+div#threeD-project-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%; }
-  div#project-container a {
+  div#webpage-project-container a,
+  div#threeD-project-container a {
     text-decoration: none;
     color: inherit; }
-  div#project-container p {
+  div#webpage-project-container p,
+  div#threeD-project-container p {
     font-family: Comfortaa; }
-  div#project-container span {
+  div#webpage-project-container span,
+  div#threeD-project-container span {
     font-weight: bold;
     font-family: Capriola; }
-  div#project-container img {
+  div#webpage-project-container img,
+  div#threeD-project-container img {
     max-width: 100%;
     max-height: 50vh;
     display: block;
@@ -102,7 +107,8 @@ div#panel1 {
     text-shadow: 0 0 5px white; }
 
 @media screen and (min-width: 850px) {
-  div#project-container {
+  div#webpage-project-container,
+  div#threeD-project-container {
     flex-direction: row;
     flex-wrap: wrap; }
 
