@@ -26,8 +26,6 @@ div#social-media-container {
     width: 100%;
     
     img {
-        width: 10vw;
-        height: 10vw;
         margin: 0 15px;
         box-sizing: border-box;
     }
@@ -39,7 +37,19 @@ div#social-media-container {
 
     a:hover {
         border-radius: 100%;
-        border: 3px solid white;
+        border: 3px solid black;
+    }
+}
+@media screen and (max-width: 850px) {
+    div#social-media-container img {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+@media screen and (min-width: 850px) {
+    div#social-media-container img {
+        width: 5vw;
+        height: 5vw;
     }
 }
 
@@ -47,7 +57,6 @@ div#webpage-project-container,
 div#threeD-project-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
     width: 100%;
 
     a {
@@ -72,6 +81,19 @@ div#threeD-project-container {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 850px) {
+    div#webpage-project-container,
+    div#threeD-project-container {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 850px) {
+    div#webpage-project-container,
+    div#threeD-project-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
 img.arrow {
     height: 144px;
@@ -92,9 +114,21 @@ div.panel {
     border-bottom: 5px solid white;
     border-radius: 15px;
     box-sizing: border-box;
-    margin: 5vw;
     padding: 10px;
-    width: 90%;
+}
+@media screen and (max-width: 850px) {
+    div.panel {
+        width: 90%;
+        margin: 5vw;
+    }
+}
+@media screen and (min-width: 850px) {
+
+    div.panel {
+        width: 30%;
+        max-width: 500px;
+        margin: 15px 1.5%;
+    }
 }
 
 div.panel:not(#panel1) {
@@ -102,6 +136,8 @@ div.panel:not(#panel1) {
 }
 
 div#panel1 {
+    background-color: white;
+    color: black;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -172,26 +208,3 @@ div#panel1 {
 //     }
 // }
 
-
-
-// Media Queries
-@media screen and (min-width: 850px) {
-    div#webpage-project-container,
-    div#threeD-project-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    div.panel {
-        width: 30%;
-        max-width: 500px;
-        margin: 15px 1.5%;
-    }
-
-    div#social-media-container {
-        img {
-            width: 5vw;
-            height: 5vw;
-        }
-    }
-}

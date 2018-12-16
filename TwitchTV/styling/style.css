@@ -5,106 +5,177 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #ctn {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: rgba(255, 255, 255, 0.5);
   border-left: 5px solid white;
   border-right: 5px solid white;
   margin: auto;
   max-width: 1200px;
   min-height: 100vh;
-  padding: 30px 0; }
+  padding: 30px 0;
+}
 
 header {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  text-transform: uppercase; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
 
 #twitch-logo {
-  height: 100%; }
+  height: 100%;
+}
 
 ul {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  list-style: none; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
 
 li {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*For older browsers*/
   background: #666699;
   /*For browsers that support gradients*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#666699), to(#efeff5));
   background: linear-gradient(to top, #666699, #efeff5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding: 0.5em 1em; }
-  li div {
-    border: 2px solid white;
-    border-radius: 100%;
-    display: inline-block;
-    height: 15px;
-    margin-right: 10px;
-    width: 15px; }
-  li h2 {
-    font-size: 15px;
-    margin: 0; }
+  padding: 0.5em 1em;
+}
+
+li div {
+  border: 2px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  width: 15px;
+}
+
+li h2 {
+  font-size: 15px;
+  margin: 0;
+}
 
 .blue {
-  border: 3px solid #1ad1ff; }
-  .blue > div {
-    background: #1ad1ff; }
-  .blue:hover h2 {
-    color: white; }
-  .blue.active {
-    box-shadow: 0 0 20px #1ad1ff; }
+  border: 3px solid #1ad1ff;
+}
+
+.blue > div {
+  background: #1ad1ff;
+}
+
+.blue:hover h2 {
+  color: white;
+}
+
+.blue.active {
+  -webkit-box-shadow: 0 0 20px #1ad1ff;
+          box-shadow: 0 0 20px #1ad1ff;
+}
 
 .green {
-  border: 3px solid #00ff00; }
-  .green > div {
-    background: #00ff00; }
-  .green:hover h2 {
-    color: white; }
-  .green.active {
-    box-shadow: 0 0 20px #00ff00; }
+  border: 3px solid #00ff00;
+}
+
+.green > div {
+  background: #00ff00;
+}
+
+.green:hover h2 {
+  color: white;
+}
+
+.green.active {
+  -webkit-box-shadow: 0 0 20px #00ff00;
+          box-shadow: 0 0 20px #00ff00;
+}
 
 .yellow {
-  border: 3px solid #ffff00; }
-  .yellow > div {
-    background: #ffff00; }
-  .yellow:hover h2 {
-    color: white; }
-  .yellow.active {
-    box-shadow: 0 0 20px #ffff00; }
+  border: 3px solid #ffff00;
+}
+
+.yellow > div {
+  background: #ffff00;
+}
+
+.yellow:hover h2 {
+  color: white;
+}
+
+.yellow.active {
+  -webkit-box-shadow: 0 0 20px #ffff00;
+          box-shadow: 0 0 20px #ffff00;
+}
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1rem 2rem; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
 
 .profiles {
   height: 250px;
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1em 0;
-  position: relative; }
-  .profiles:hover img {
-    box-shadow: 0 0 30px white; }
-  .profiles:hover h2 {
-    text-shadow: 0 0 5px white; }
+  position: relative;
+}
+
+.profiles:hover img {
+  -webkit-box-shadow: 0 0 30px white;
+          box-shadow: 0 0 30px white;
+}
+
+.profiles:hover h2 {
+  text-shadow: 0 0 5px white;
+}
 
 .profile-images {
   height: 90%;
   width: 90%;
   border-radius: 100%;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .profile-names {
   position: absolute !important;
@@ -112,33 +183,46 @@ main {
   width: 100%;
   text-align: center;
   margin: 0;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .profile-statuses {
-  margin-top: -2em; }
+  margin-top: -2em;
+}
 
 .online {
-  border: 2em solid #00ff00; }
+  border: 2em solid #00ff00;
+}
 
 .offline {
-  border: 2em solid #ffff00; }
+  border: 2em solid #ffff00;
+}
 
 .info-overlay {
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   top: 0;
   left: 5%;
   height: 90%;
   width: 90%;
   border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding: 10px; }
-  .info-overlay p {
-    margin: 0;
-    font-weight: bold; }
+  padding: 10px;
+}
 
+.info-overlay p {
+  margin: 0;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

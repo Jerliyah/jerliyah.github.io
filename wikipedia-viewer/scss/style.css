@@ -1,0 +1,99 @@
+/*================
+    Variables
+=================*/
+/*==============
+    Styling
+===============*/
+body {
+  height: 100vh;
+  background: #092B40;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+aside h1 {
+  color: white;
+}
+
+input {
+  text-align: center;
+  margin: 1rem;
+  border: 3px solid #6699ff;
+  border-radius: 2rem;
+  font-size: 1.5em;
+}
+
+button {
+  background: #6699ff;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1em;
+}
+
+button:focus {
+  background: #3377ff;
+}
+
+button:hover {
+  background: #1a66ff;
+}
+
+button:active {
+  background: #e6f2ff;
+  color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+div {
+  background: #e6f2ff;
+  padding: 1rem 3rem;
+  color: black;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+div h1 {
+  margin: 0;
+}
+
+div p {
+  margin: 0;
+}
+
+div:hover {
+  border-left: 1rem solid #6699ff;
+  padding-left: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
